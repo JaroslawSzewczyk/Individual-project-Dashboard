@@ -1,0 +1,26 @@
+body {
+    height: 100vh;
+    background-color: $body-background;
+}
+
+img {
+    width: 20px;
+}
+
+.column {
+    display: flex;
+    justify-content: space-around;
+    color: $body-background;
+    align-items: center;
+   
+    height: 100%;
+    border-left:  1px solid $body-background;
+}
+
+.col_1 {
+    min-width: 8.3%;
+}
+
+.col_2{
+    min-width: 16.6%;
+}
