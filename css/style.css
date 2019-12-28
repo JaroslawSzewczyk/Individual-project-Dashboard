@@ -3,23 +3,37 @@
 /* Fonts */
 body {
   height: 100vh;
-  background-color: #E3E3E3;
+  background-color: #f5f5f2;
 }
 
 img {
   width: 20px;
 }
 
+img:hover {
+  cursor: pointer;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  color: #adadad;
+}
+
+.p_20 {
+  font-size: 20px;
+}
+
 .column {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: #E3E3E3;
+  color: #fff;
   -ms-flex-align: center;
       align-items: center;
   height: 100%;
-  border-left: 1px solid #E3E3E3;
+  border-left: 1px solid #e3e3e3;
 }
 
 .col_1 {
@@ -28,6 +42,16 @@ img {
 
 .col_2 {
   min-width: 16.6%;
+}
+
+.circle {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #f58220;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -370,12 +394,16 @@ template {
 }
 
 .topBar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: right;
       justify-content: right;
-  width: 100vw;
-  height: 50px;
+  width: 1280px;
+  height: 60px;
   background-color: white;
 }
 

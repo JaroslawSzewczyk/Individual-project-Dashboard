@@ -1,20 +1,33 @@
 body {
     height: 100vh;
-    background-color: $body-background;
+    background-color: $bgc;
 }
 
 img {
     width: 20px;
+
+    &:hover {
+      cursor: pointer;
+    }
+}
+
+p {
+  font-family: $paragraph-font;
+  color: $paragraph-color;
+}
+
+.p_20{
+  font-size: 20px;
 }
 
 .column {
+    position: relative;
     display: flex;
     justify-content: space-around;
-    color: $body-background;
+    color: $main-site-color;
     align-items: center;
-   
     height: 100%;
-    border-left:  1px solid $body-background;
+    border-left:  1px solid $first-border-color;
 }
 
 .col_1 {
@@ -23,4 +36,14 @@ img {
 
 .col_2{
     min-width: 16.6%;
+}
+
+.circle {
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #f58220;
 }

@@ -1,7 +1,11 @@
 .topBar{
+    position: fixed;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: right;
-    width: 100vw;
-    height: 50px;
+    width: 1280px;
+    height: 60px;
     background-color: white;
 }
