@@ -1,0 +1,50 @@
+.sidebar{
+  position: fixed;
+  width: 200px;
+  height: 100vh;
+  background-color: $sidebar-bgc;
+  color: #fff;
+
+  .sidebar_header{
+    display: flex;
+    justify-content: space-around;
+
+    .hand {
+      font-family: $hand-writing;
+      font-size: 36px;
+      letter-spacing: 2px;
+      color: $main-site-color;
+    }
+
+    p {
+      color: black;
+    }
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: $list-text-color;
+    margin-bottom: 30px;
+  }
+
+  .manager{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+
+    .managerImg{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $main-site-color;
+    }
+
+    .circleManager{
+      top: 0;
+      left: 26%;
+      background-color: #04ae00;;
+    }
+  }
+}

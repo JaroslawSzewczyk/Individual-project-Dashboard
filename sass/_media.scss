@@ -1,0 +1,19 @@
+@media(min-width: 1540px){
+  .sidebar{
+    top:0;
+    left: 6%;
+  }
+
+  .topBar{
+      width: 72%;
+  }
+}
+
+@media(max-width: 1539px) and (min-width: 1400px){
+  .topBar{
+    width: 1000px;
+  }
+  .sidebar {
+    left: 5%;
+  }
+}
