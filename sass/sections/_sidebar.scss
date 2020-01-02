@@ -1,6 +1,6 @@
 .sidebar{
   position: fixed;
-  width: 200px;
+  width: 15vw;
   height: 100vh;
   background-color: $sidebar-bgc;
   color: #fff;
@@ -15,9 +15,42 @@
       letter-spacing: 2px;
       color: $main-site-color;
     }
+  }
 
-    p {
-      color: black;
+  ul {
+    list-style: none;
+    margin-left: -40px;
+
+    li {
+      display: flex;
+      align-items: center;
+      transition: .2s linear;
+      padding-left: 40px;
+
+      i {
+        transition: .2s linear;
+      }
+
+      p{
+        color: $list-text-color;
+        padding-left: 15px;
+        transition: .2s linear;
+      }
+
+      &:hover i {
+        cursor: pointer;
+        color: white;
+      }
+
+      &:hover p {
+        cursor: pointer;
+        color: white;
+      }
+
+      &:hover {
+        background-color: #282828;
+        border-left: 5px solid #f58220;
+      }
     }
   }
 

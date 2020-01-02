@@ -1,0 +1,55 @@
+body {
+  height: 200vh;
+  background-color: $bgc;
+}
+
+h2 {
+color: $header-color;
+text-transform: uppercase;
+font-size: $fz-14;
+font-family: $paragraph-font;
+text-align: center;
+}
+
+i {
+  width: 20px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+p {
+font-family: $paragraph-font;
+color: $paragraph-color;
+}
+
+.p_20{
+font-size: $fz-20;
+}
+
+
+.circle {
+position: absolute;
+top: 28%;
+left: 50%;
+width: 9px;
+height: 9px;
+border-radius: 50%;
+background-color: #f58220;
+}
+
+.column {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  color: $main-site-color;
+  align-items: center;
+  height: 100%;
+  border-left:  1px solid $first-border-color;
+}
+
+ i {
+   color: $list-text-color;
+   font-size: 16px;
+ }

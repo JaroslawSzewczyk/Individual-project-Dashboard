@@ -1,16 +1,12 @@
 @import "variables";
-@import "mixins";
 @import "normalize";
 @import "layout";
-@import "topBar";
-@import "sidebar";
-@import "media";
+@import "glyphter";
 
 /* Components */
-@import "components/form_field";
+
+@import "components/global";
 
 /* Sections */
-
-
-/* Pages / Views */
-@import "pages/registration";
+@import "sections/topBar";
+@import "sections/sidebar";
