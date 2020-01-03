@@ -8,12 +8,20 @@
   .sidebar_header{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     .hand {
       font-family: $hand-writing;
       font-size: 36px;
       letter-spacing: 2px;
       color: $main-site-color;
+      padding: 0;
+    }
+
+    i {
+      font-size: 28px;
+      color: $additional-color;
+      padding-right: 10px;
     }
   }
 
