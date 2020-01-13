@@ -536,6 +536,18 @@ i {
   font-size: 16px;
 }
 
+.btn {
+  background-color: #f58220;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.btn i {
+  color: white;
+}
+
 /* Sections */
 .topBar {
   position: fixed;
@@ -673,9 +685,45 @@ i {
 }
 
 .main .container {
-  width: 83vw;
-  height: 44vh;
+  width: 82vw;
+  height: 45vh;
   margin-top: 20px;
   background-color: #fff;
+}
+
+.main .container .dateContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 360px;
+  height: 40px;
+  margin: 40px auto;
+}
+
+.main .container .dateContainer .smallDateContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 300px;
+  height: 40px;
+  margin: 50px auto;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+}
+
+.main .container .dateContainer .smallDateContainer p {
+  margin-left: 15px;
+}
+
+.main .container .dateContainer .smallDateContainer .verticalLine {
+  height: 80%;
+  margin-left: 40px;
+  border-left: 1px solid #e3e3e3;
+}
+
+.main .container .dateContainer .smallDateContainer i {
+  margin-left: 40px;
 }
 /*# sourceMappingURL=style.css.map */

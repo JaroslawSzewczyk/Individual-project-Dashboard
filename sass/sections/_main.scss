@@ -6,9 +6,42 @@
   flex-direction: column;
 
   .container {
-    width: 83vw;
-    height: 44vh;
+    width: 82vw;
+    height: 45vh;
     margin-top: 20px;
     background-color: $main-site-color;
+
+    .dateContainer {
+
+      display: flex;
+      align-items: center;
+      width: 360px;
+      height: 40px;
+      margin: 40px auto;
+
+      .smallDateContainer {
+        display: flex;
+        align-items: center;
+        width: 300px;
+        height: 40px;
+        margin: 50px auto;
+        border: 1px solid $first-border-color;
+        border-radius: 5px;
+
+        p {
+          margin-left: 15px;
+        }
+
+        .verticalLine {
+          height: 80%;
+          margin-left: 40px;
+          border-left: 1px solid $first-border-color;
+        }
+
+        i {
+          margin-left: 40px;
+        }
+      }
+    }
   }
 }
