@@ -485,6 +485,12 @@ h2 {
   padding-left: 15px;
 }
 
+h3 {
+  color: #a7a7a7;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
 i {
   width: 20px;
 }
@@ -509,7 +515,24 @@ p {
   width: 9px;
   height: 9px;
   border-radius: 50%;
+}
+
+.largeCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.firstCircleColor {
+  background-color: #80bfca;
+}
+
+.secondCircleColor {
   background-color: #f58220;
+}
+
+.thirdCircleColor {
+  background-color: #59b66d;
 }
 
 .line {
@@ -671,7 +694,6 @@ i {
 .sidebar .manager .circleManager {
   top: 0;
   left: 26%;
-  background-color: #04ae00;
 }
 
 .main {
@@ -686,7 +708,7 @@ i {
 
 .main .container {
   width: 82vw;
-  height: 45vh;
+  height: 800px;
   margin-top: 20px;
   background-color: #fff;
 }
@@ -725,5 +747,62 @@ i {
 
 .main .container .dateContainer .smallDateContainer i {
   margin-left: 40px;
+}
+
+.main .container .dataContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+  margin: 50px auto;
+}
+
+.main .container .dataContainer .data {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 46%;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.main .container .dataContainer .data p:first-of-type {
+  font-weight: bold;
+}
+
+.main .container .dataContainer .data p:last-of-type {
+  color: #191919;
+}
+
+.main .container h3 {
+  margin: 80px 20% 40px;
+}
+
+.main .container .boxContainer {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: auto;
+  width: 40%;
+}
+
+.main .container .boxContainer .box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
+  background-color: #f3f3f1;
+  border-radius: 5px;
+}
+
+.main .container .boxContainer .box:last-of-type {
+  background-color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -7,12 +7,11 @@
 
   .container {
     width: 82vw;
-    height: 45vh;
+    height: 800px;
     margin-top: 20px;
     background-color: $main-site-color;
 
     .dateContainer {
-
       display: flex;
       align-items: center;
       width: 360px;
@@ -43,5 +42,56 @@
         }
       }
     }
+
+    .dataContainer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 60%;
+      margin: 50px auto;
+
+      .data {
+        display: flex;
+        justify-content: space-between;
+        width: 46%;
+        border-bottom: 1px solid $first-border-color;
+
+        p {
+          &:first-of-type{
+            font-weight: bold;
+          }
+
+          &:last-of-type {
+            color: $number-color;
+          }
+        }
+      }
+    }
+
+    h3 {
+      margin: 80px 20% 40px;
+    }
+
+    .boxContainer {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      width: 40%;
+
+      .box {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 30%;
+        background-color: $box-bgc-color;
+        border-radius: 5px;
+
+        &:last-of-type {
+          background-color: #fff;
+        }
+      }
+    }
+
+
   }
 }

@@ -11,6 +11,12 @@ font-weight: normal;
 padding-left: 15px;
 }
 
+h3 {
+  color: $header-color;
+  font-family: $paragraph-font;
+  font-size: 18px;
+}
+
 i {
   width: 20px;
 
@@ -36,7 +42,24 @@ left: 50%;
 width: 9px;
 height: 9px;
 border-radius: 50%;
-background-color: #f58220;
+}
+
+.largeCircle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.firstCircleColor {
+  background-color: $first-box-bgc-color;
+}
+
+.secondCircleColor {
+  background-color: $second-box-bgc-color;
+}
+
+.thirdCircleColor {
+  background-color: $third-box-bgc-color;
 }
 
 .line {
