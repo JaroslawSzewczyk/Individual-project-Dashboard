@@ -1,11 +1,24 @@
 .btn {
+  display: block;
   background-color: #f58220;
   border: none;
   width: 40px;
   height: 40px;
   border-radius: 5px;
+  color: $bgc;
+  font-family: $paragraph-font;
 
   i {
-    color: white;
+    color: $bgc;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.addNew {
+  width: 120px;
+  margin: 25px 0;
+  margin: 25px auto;
 }

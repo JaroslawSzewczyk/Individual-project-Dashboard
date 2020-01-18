@@ -4,9 +4,10 @@
     right: 0%;
     display: flex;
     justify-content: right;
-    width: 85vw;
+    width: 83.5vw;
     height: 60px;
     background-color: white;
+    z-index: 5;
 
     i {
       color: $topbar-i;

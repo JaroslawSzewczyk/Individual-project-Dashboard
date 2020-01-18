@@ -6,8 +6,9 @@
   flex-direction: column;
 
   .container {
+    position: relative;
     width: 82vw;
-    height: 800px;
+    height: 1000px;
     margin-top: 20px;
     background-color: $main-site-color;
 
@@ -91,7 +92,5 @@
         }
       }
     }
-
-
   }
 }
