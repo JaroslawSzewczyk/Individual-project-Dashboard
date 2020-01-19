@@ -1,25 +1,23 @@
-.topBar{
-    position: fixed;
-    top:0;
-    right: 0%;
-    display: flex;
-    justify-content: right;
-    width: 83.5vw;
-    height: 60px;
-    background-color: white;
-    z-index: 5;
+.topBar {
+  position: fixed;
+  top: 0;
+  right: 0%;
+  display: flex;
+  justify-content: right;
+  width: 85vw;
+  height: 60px;
+  background-color: white;
+  z-index: 5;
 
-    i {
-      color: $topbar-i;
-    }
+  i {
+    color: $topbar-i;
+  }
 
-    .col_1 {
-      min-width: 8.3%;
-    }
+  .col_1 {
+    min-width: 8.3%;
+  }
 
-    .col_2{
-      min-width: 16.6%;
-    }
+  .col_2 {
+    min-width: 16.6%;
+  }
 }
-
-

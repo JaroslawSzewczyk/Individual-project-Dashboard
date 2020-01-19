@@ -593,7 +593,7 @@ i {
   display: flex;
   -ms-flex-pack: right;
       justify-content: right;
-  width: 83.5vw;
+  width: 85vw;
   height: 60px;
   background-color: white;
   z-index: 5;
@@ -723,7 +723,6 @@ i {
 .main .container {
   position: relative;
   width: 82vw;
-  height: 1000px;
   margin-top: 20px;
   background-color: #fff;
 }
@@ -815,6 +814,7 @@ i {
   width: 30%;
   background-color: #f3f3f1;
   border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .main .container .boxContainer .box:last-of-type {

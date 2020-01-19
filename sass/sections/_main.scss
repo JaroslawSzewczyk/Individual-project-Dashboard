@@ -8,7 +8,6 @@
   .container {
     position: relative;
     width: 82vw;
-    height: 1000px;
     margin-top: 20px;
     background-color: $main-site-color;
 
@@ -58,7 +57,7 @@
         border-bottom: 1px solid $first-border-color;
 
         p {
-          &:first-of-type{
+          &:first-of-type {
             font-weight: bold;
           }
 
@@ -86,6 +85,7 @@
         width: 30%;
         background-color: $box-bgc-color;
         border-radius: 5px;
+        margin-bottom: 20px;
 
         &:last-of-type {
           background-color: #fff;
