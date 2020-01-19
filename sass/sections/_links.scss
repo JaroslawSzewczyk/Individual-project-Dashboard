@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  width: 70%;
+  width: 1000px;
   border-top: 1px solid $first-border-color;
 
   .link {
@@ -49,5 +49,37 @@
     &:hover .iContainer {
       opacity: 1;
     }
+  }
+}
+
+@media (max-width: 1260px) {
+  .links{
+    width: 800px;
+  }
+}
+@media (max-width: 1060px) {
+  .links{
+    width: 600px;
+
+    .link {
+
+      p {
+        width: 25%;
+      }
+
+      .linkContainer {
+        width: 35%;
+      }
+
+      .iContainer {
+        width: 15%;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .links{
+    width: 500px;
   }
 }

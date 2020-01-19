@@ -1,27 +1,27 @@
 .sidebar{
   position: fixed;
-  width: 15vw;
+  width: 200px;
   height: 100vh;
   background-color: $sidebar-bgc;
   color: #fff;
+  z-index: 5;
 
   .sidebar_header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 
     .hand {
       font-family: $hand-writing;
-      font-size: 36px;
-      letter-spacing: 2px;
+      font-size: 30px;
       color: $main-site-color;
-      padding: 0;
+      padding-left: 10px;
     }
 
     i {
-      font-size: 28px;
+      font-size: 24px;
       color: $additional-color;
-      padding-right: 10px;
+      padding: 0 15px 5px 0;
     }
   }
 
@@ -33,7 +33,7 @@
       display: flex;
       align-items: center;
       transition: .2s linear;
-      padding-left: 40px;
+      padding-left: 20px;
 
       i {
         transition: .2s linear;
