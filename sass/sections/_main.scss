@@ -126,3 +126,15 @@
     width: 500px;
   }
 }
+
+@media (max-width: 760px) {
+  .main .container {
+    width: calc(100vw - 70px);
+  }
+}
+
+@media (max-width: 670px) and (orientation: landscape) {
+  .main .container {
+    width: calc(100vw - 90px);
+  }
+}

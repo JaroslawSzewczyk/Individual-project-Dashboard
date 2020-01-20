@@ -700,23 +700,50 @@ p {
 .sidebar .manager {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
   position: relative;
+}
+
+.sidebar .manager h2 {
+  width: 100%;
+  padding-left: 35px;
+  margin-bottom: 20px;
 }
 
 .sidebar .manager .managerImg {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  margin-left: 35px;
   background-color: #fff;
 }
 
 .sidebar .manager .circleManager {
-  top: 0;
-  left: 26%;
+  top: 52px;
+  left: 34%;
+}
+
+.sidebar .manager p {
+  margin-left: 10px;
+}
+
+@media (max-width: 760px) {
+  .sidebar {
+    width: 50px;
+    overflow: hidden;
+  }
+  .sidebar .sidebar_header .hand {
+    display: none;
+  }
+  .sidebar .sidebar_header i {
+    padding: 20px 0 0 20px;
+  }
+  .sidebar .manager {
+    display: none;
+  }
 }
 
 .main {
@@ -858,6 +885,18 @@ p {
 @media (max-width: 860px) {
   .main .container .wrapper {
     width: 500px;
+  }
+}
+
+@media (max-width: 760px) {
+  .main .container {
+    width: calc(100vw - 70px);
+  }
+}
+
+@media (max-width: 670px) and (orientation: landscape) {
+  .main .container {
+    width: calc(100vw - 90px);
   }
 }
 

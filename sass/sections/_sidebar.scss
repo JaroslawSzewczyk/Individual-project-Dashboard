@@ -71,20 +71,53 @@
 
   .manager{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     position: relative;
 
+    h2 {
+      width: 100%;
+      padding-left: 35px;
+      margin-bottom: 20px;
+    }
     .managerImg{
       width: 50px;
       height: 50px;
       border-radius: 50%;
+      margin-left: 35px;
       background-color: $main-site-color;
     }
 
     .circleManager{
-      top: 0;
-      left: 26%;
+      top: 52px;
+      left: 34%;
+    }
+
+    p {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 760px){
+  .sidebar {
+    width: 50px;
+    overflow: hidden;
+
+    .sidebar_header {
+
+      .hand{
+        display: none;
+      }
+
+      i {
+        padding: 20px 0 0 20px;
+      }
+    }
+
+    .manager {
+      display: none;
     }
   }
 }
