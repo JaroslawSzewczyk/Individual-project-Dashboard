@@ -69,18 +69,3 @@ border-radius: 50%;
   background-color: $first-border-color;
 }
 
-.column {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  color: $main-site-color;
-  align-items: center;
-  height: 100%;
-  border-left:  1px solid $first-border-color;
-  transition: .2s linear;
-
-  &:hover {
-    background-color: $bgc;
-  }
-}
-
