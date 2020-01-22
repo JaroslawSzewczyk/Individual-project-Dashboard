@@ -871,32 +871,6 @@ p {
   margin: 55px 0;
 }
 
-.main .container .wrapper .boxContainer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  margin: auto;
-  width: 60%;
-}
-
-.main .container .wrapper .boxContainer .box {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 30%;
-  background-color: #f3f3f1;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-.main .container .wrapper .boxContainer .box:last-of-type {
-  background-color: #fff;
-}
-
 @media (max-width: 1260px) {
   .main .container .wrapper {
     width: 800px;

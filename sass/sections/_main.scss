@@ -73,27 +73,6 @@
       h3{
         margin: 55px 0;
       }
-
-      .boxContainer {
-        display: flex;
-        justify-content: space-between;
-        margin: auto;
-        width: 60%;
-
-        .box {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          width: 30%;
-          background-color: $box-bgc-color;
-          border-radius: 5px;
-          margin-bottom: 20px;
-
-          &:last-of-type {
-            background-color: #fff;
-          }
-        }
-      }
     }
   }
 }
