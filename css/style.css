@@ -500,6 +500,13 @@ i:hover {
   cursor: pointer;
 }
 
+a {
+  color: #5c5c5c;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   color: #adadad;
@@ -576,8 +583,8 @@ p {
   left: 0;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: right;
-      justify-content: right;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   width: 100vw;
   height: 60px;
   background-color: white;
@@ -585,7 +592,7 @@ p {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.topBar .column {
+.topBar .columnBtn {
   position: relative;
   display: -ms-flexbox;
   display: flex;
@@ -595,28 +602,27 @@ p {
   -ms-flex-align: center;
       align-items: center;
   height: 100%;
+  background-color: #fff;
+  border-bottom: 0;
+  border-top: 0;
+  border-right: 0;
   border-left: 1px solid #e3e3e3;
+  color: #adadad;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
   transition: .2s linear;
 }
 
-.topBar .column p {
-  padding-bottom: 2px;
-}
-
-.topBar .column i {
-  color: #5c5c5c;
-  font-size: 18px;
-}
-
-.topBar .column:hover {
+.topBar .columnBtn:hover {
   background-color: #f5f5f2;
+  cursor: pointer;
 }
 
-.topBar .col_1 {
+.topBar .colShort {
   width: 80px;
 }
 
-.topBar .col_2 {
+.topBar .colWide {
   width: 200px;
 }
 
@@ -693,16 +699,12 @@ p {
   -ms-flex-align: center;
       align-items: center;
   transition: .2s linear;
-  padding-left: 20px;
+  padding: 15px 0 15px 20px;
+  border-left: 5px solid transparent;
 }
 
 .sidebar ul li i {
-  transition: .2s linear;
-}
-
-.sidebar ul li p {
-  color: #5c5c5c;
-  padding-left: 15px;
+  margin-right: 15px;
   transition: .2s linear;
 }
 
@@ -711,14 +713,13 @@ p {
   color: white;
 }
 
-.sidebar ul li:hover p {
-  cursor: pointer;
+.sidebar ul li:hover a {
   color: white;
 }
 
 .sidebar ul li:hover {
   background-color: #282828;
-  border-left: 5px solid #f58220;
+  border-color: #f58220;
 }
 
 .sidebar .divider {
@@ -744,7 +745,7 @@ p {
   margin-bottom: 20px;
 }
 
-.sidebar .manager .managerImg {
+.sidebar .manager img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -757,7 +758,7 @@ p {
   left: 34%;
 }
 
-.sidebar .manager p {
+.sidebar .manager h3 {
   margin-left: 10px;
 }
 
@@ -770,7 +771,13 @@ p {
     display: none;
   }
   .sidebar .sidebar_header i {
-    padding: 20px 0 0 20px;
+    padding: 20px 0 0 15px;
+  }
+  .sidebar ul li {
+    padding-left: 10px;
+  }
+  .sidebar ul li a span {
+    display: none;
   }
   .sidebar .manager {
     display: none;
@@ -783,7 +790,7 @@ p {
   }
 }
 
-.main {
+main {
   position: absolute;
   top: 60px;
   right: 15px;
@@ -793,14 +800,14 @@ p {
       flex-direction: column;
 }
 
-.main .container {
+main .container {
   position: relative;
   width: calc(100vw - 250px);
   margin-top: 20px;
   background-color: #fff;
 }
 
-.main .container .dateContainer {
+main .container .dateContainer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -809,11 +816,13 @@ p {
   margin: 40px auto;
 }
 
-.main .container .dateContainer .smallDateContainer {
+main .container .dateContainer .smallDateContainer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 300px;
   height: 40px;
   margin: 50px auto;
@@ -821,26 +830,23 @@ p {
   border-radius: 5px;
 }
 
-.main .container .dateContainer .smallDateContainer p {
-  margin-left: 15px;
+main .container .dateContainer .smallDateContainer input {
+  border: none;
+  font-family: "Roboto", sans-serif;
+  color: #a7a7a7;
 }
 
-.main .container .dateContainer .smallDateContainer .verticalLine {
+main .container .dateContainer .smallDateContainer .verticalLine {
   height: 80%;
-  margin-left: 40px;
   border-left: 1px solid #e3e3e3;
 }
 
-.main .container .dateContainer .smallDateContainer i {
-  margin-left: 40px;
-}
-
-.main .container .wrapper {
+main .container .wrapper {
   width: 1000px;
   margin: auto;
 }
 
-.main .container .wrapper .dataContainer {
+main .container .wrapper .dataContainer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -850,7 +856,7 @@ p {
   margin: 50px auto;
 }
 
-.main .container .wrapper .dataContainer .data {
+main .container .wrapper .dataContainer .data {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
@@ -859,73 +865,73 @@ p {
   border-bottom: 1px solid #e3e3e3;
 }
 
-.main .container .wrapper .dataContainer .data p:first-of-type {
+main .container .wrapper .dataContainer .data p:first-of-type {
   font-weight: bold;
 }
 
-.main .container .wrapper .dataContainer .data p:last-of-type {
+main .container .wrapper .dataContainer .data p:last-of-type {
   color: #191919;
 }
 
-.main .container .wrapper h3 {
+main .container .wrapper h3 {
   margin: 55px 0;
 }
 
 @media (max-width: 1260px) {
-  .main .container .wrapper {
+  main .container .wrapper {
     width: 800px;
   }
 }
 
 @media (max-width: 1260px) and (orientation: landscape) {
-  .main .container {
+  main .container {
     width: calc(100vw - 225px);
   }
 }
 
 @media (max-width: 1060px) {
-  .main .container {
+  main .container {
     width: calc(100vw - 245px);
   }
-  .main .container .wrapper {
+  main .container .wrapper {
     width: 600px;
   }
 }
 
 @media (max-width: 860px) {
-  .main .container .wrapper {
+  main .container .wrapper {
     width: 500px;
   }
 }
 
 @media (max-width: 760px) {
-  .main .container {
+  main .container {
     width: calc(100vw - 70px);
   }
 }
 
 @media (max-width: 670px) and (orientation: landscape) {
-  .main .container {
+  main .container {
     width: calc(100vw - 90px);
   }
 }
 
 @media (max-width: 600px) {
-  .main .container {
+  main .container {
     width: calc(100vw - 85px);
   }
-  .main .container .dateContainer {
+  main .container .dateContainer {
     -ms-flex-direction: column;
         flex-direction: column;
     width: 320px;
   }
-  .main .container .dateContainer .smallDateContainer {
+  main .container .dateContainer .smallDateContainer {
     margin: 10px 0 10px;
   }
-  .main .container .wrapper {
+  main .container .wrapper {
     width: 320px;
   }
-  .main .container .wrapper .dataContainer {
+  main .container .wrapper .dataContainer {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
@@ -933,7 +939,7 @@ p {
     width: 320px;
     margin: 25px auto;
   }
-  .main .container .wrapper .dataContainer .data {
+  main .container .wrapper .dataContainer .data {
     width: 90%;
   }
 }

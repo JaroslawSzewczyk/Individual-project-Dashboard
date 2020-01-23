@@ -1,4 +1,4 @@
-.main {
+main {
   position: absolute;
   top: 60px;
   right: 15px;
@@ -20,24 +20,22 @@
       .smallDateContainer {
         display: flex;
         align-items: center;
+        justify-content: space-around;
         width: 300px;
         height: 40px;
         margin: 50px auto;
         border: 1px solid $first-border-color;
         border-radius: 5px;
 
-        p {
-          margin-left: 15px;
-          }
+        input {
+          border: none;
+          font-family: $paragraph-font;
+          color: $header-color;
+        }
 
         .verticalLine {
           height: 80%;
-          margin-left: 40px;
           border-left: 1px solid $first-border-color;
-        }
-
-        i {
-          margin-left: 40px;
         }
       }
     }
@@ -79,19 +77,19 @@
 
 
 @media (max-width: 1260px) {
-  .main .container .wrapper{
+  main .container .wrapper{
     width: 800px;
   }
 }
 
 @media (max-width: 1260px) and (orientation: landscape) {
-  .main .container {
+  main .container {
     width: calc(100vw - 225px);
   }
 }
 
 @media (max-width: 1060px){
-  .main .container {
+  main .container {
     width: calc(100vw - 245px);
     .wrapper{
       width: 600px;
@@ -100,25 +98,25 @@
 }
 
 @media (max-width: 860px){
-  .main .container .wrapper{
+  main .container .wrapper{
     width: 500px;
   }
 }
 
 @media (max-width: 760px) {
-  .main .container {
+  main .container {
     width: calc(100vw - 70px);
   }
 }
 
 @media (max-width: 670px) and (orientation: landscape) {
-  .main .container {
+  main .container {
     width: calc(100vw - 90px);
   }
 }
 
 @media (max-width: 600px){
-  .main .container {
+  main .container {
     width: calc(100vw - 85px);
 
     .dateContainer {

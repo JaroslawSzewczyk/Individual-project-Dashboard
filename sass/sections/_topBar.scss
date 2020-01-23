@@ -3,42 +3,41 @@
   top: 0;
   left: 0;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
   width: 100vw;
   height: 60px;
   background-color: white;
   z-index: 4;
   border-bottom: 1px solid $first-border-color;
 
-  .column {
+  .columnBtn {
     position: relative;
     display: flex;
     justify-content: space-around;
     color: $main-site-color;
     align-items: center;
     height: 100%;
+    background-color: #fff;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 0;
     border-left:  1px solid $first-border-color;
+    color: $paragraph-color;
+    font-family: $paragraph-font;
+    font-size: 17px;
     transition: .2s linear;
-
-    p {
-      padding-bottom: 2px;
-    }
-
-    i {
-      color: $topbar-i;
-      font-size: 18px;
-    }
 
     &:hover {
       background-color: $bgc;
+      cursor: pointer;
     }
   }
 
-  .col_1 {
+  .colShort {
     width: 80px;
   }
 
-  .col_2 {
+  .colWide {
     width: 200px;
   }
 }

@@ -26,6 +26,13 @@ i {
   }
 }
 
+a {
+  color: $list-text-color;
+  text-decoration: none;
+  font-family: $paragraph-font;
+  font-size: 20px;
+}
+
 p {
 font-family: $paragraph-font;
 color: $paragraph-color;
