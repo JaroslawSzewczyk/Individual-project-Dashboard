@@ -26,17 +26,6 @@ main {
         margin: 50px auto;
         border: 1px solid $first-border-color;
         border-radius: 5px;
-
-        input {
-          border: none;
-          font-family: $paragraph-font;
-          color: $header-color;
-        }
-
-        .verticalLine {
-          height: 80%;
-          border-left: 1px solid $first-border-color;
-        }
       }
     }
 
@@ -91,6 +80,7 @@ main {
 @media (max-width: 1060px){
   main .container {
     width: calc(100vw - 245px);
+
     .wrapper{
       width: 600px;
     }

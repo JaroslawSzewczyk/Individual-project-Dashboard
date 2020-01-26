@@ -3,12 +3,12 @@ body {
 }
 
 h2 {
-color: $header-color;
-text-transform: uppercase;
-font-size: $fz-16;
-font-family: $paragraph-font;
-font-weight: normal;
-padding-left: 15px;
+  color: $header-color;
+  text-transform: uppercase;
+  font-size: $fz-16;
+  font-family: $paragraph-font;
+  font-weight: normal;
+  padding-left: 15px;
 }
 
 h3 {
@@ -33,22 +33,22 @@ a {
 }
 
 p {
-font-family: $paragraph-font;
-color: $paragraph-color;
+  font-family: $paragraph-font;
+  color: $paragraph-color;
 }
 
 .p_20{
-font-size: $fz-20;
+  font-size: $fz-20;
 }
 
 
 .circle {
-position: absolute;
-top: 28%;
-left: 50%;
-width: 9px;
-height: 9px;
-border-radius: 50%;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
 }
 
 .largeCircle {
@@ -75,3 +75,13 @@ border-radius: 50%;
   background-color: $first-border-color;
 }
 
+.verticalLine {
+  height: 80%;
+  border-left: 1px solid $first-border-color;
+}
+
+input {
+  border: none;
+  font-family: $paragraph-font;
+  color: $header-color;
+}
