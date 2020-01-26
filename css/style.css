@@ -504,7 +504,6 @@ a {
   color: #5c5c5c;
   text-decoration: none;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
 }
 
 p {
@@ -628,32 +627,37 @@ p {
 
 @media (max-width: 600px) {
   .topBar {
-    width: 60px;
-    height: 100vh;
+    width: 40px;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-align: start;
-        align-items: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    border-right: 1px solid #e3e3e3;
   }
-  .topBar .column {
+  .topBar .columnBtn {
     -ms-flex-direction: column;
         flex-direction: column;
-    width: 60px;
-    height: 120px;
+    width: 40px;
     border-bottom: 1px solid #e3e3e3;
   }
-  .topBar .column p {
+  .topBar .columnBtn span {
     display: none;
   }
-  .topBar .column .icon-arrow-down {
+  .topBar .columnBtn .icon-arrow-down {
     transform: rotate(-90deg);
   }
-  .topBar .column .circle {
-    top: 45px;
+  .topBar .columnBtn .circle {
+    top: 35px;
   }
-  .topBar .col_2 {
+  .topBar .colShort {
+    height: 100px;
+  }
+  .topBar .colWide {
     -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
+    height: 160px;
   }
 }
 
@@ -686,6 +690,11 @@ p {
   font-size: 24px;
   color: #999999;
   padding: 0 15px 5px 0;
+  transition: .2s linear;
+}
+
+.sidebar .sidebar_header i:hover {
+  color: white;
 }
 
 .sidebar ul {
@@ -696,20 +705,26 @@ p {
 .sidebar ul li {
   display: -ms-flexbox;
   display: flex;
+  height: 25px;
+  padding: 15px 0 15px 20px;
+  border-left: 5px solid transparent;
+  transition: .2s linear;
+}
+
+.sidebar ul li a {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-align: center;
       align-items: center;
   transition: .2s linear;
-  padding: 15px 0 15px 20px;
-  border-left: 5px solid transparent;
 }
 
-.sidebar ul li i {
+.sidebar ul li a i {
   margin-right: 15px;
   transition: .2s linear;
 }
 
 .sidebar ul li:hover i {
-  cursor: pointer;
   color: white;
 }
 
@@ -776,9 +791,6 @@ p {
   .sidebar ul li {
     padding-left: 10px;
   }
-  .sidebar ul li a span {
-    display: none;
-  }
   .sidebar .manager {
     display: none;
   }
@@ -786,7 +798,11 @@ p {
 
 @media (max-width: 600px) {
   .sidebar {
-    display: none;
+    width: 40px;
+    height: 50px;
+  }
+  .sidebar .sidebar_header i {
+    padding: 12px 0 15px 10px;
   }
 }
 
@@ -917,30 +933,45 @@ main .container .wrapper h3 {
 }
 
 @media (max-width: 600px) {
+  main {
+    top: 5px;
+  }
   main .container {
-    width: calc(100vw - 85px);
+    width: calc(100vw - 75px);
+    margin-top: 0;
   }
   main .container .dateContainer {
     -ms-flex-direction: column;
         flex-direction: column;
-    width: 320px;
+    width: 80%;
   }
   main .container .dateContainer .smallDateContainer {
     margin: 10px 0 10px;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 100px;
+    width: 80%;
+  }
+  main .container .dateContainer .smallDateContainer .verticalLine {
+    display: none;
   }
   main .container .wrapper {
-    width: 320px;
+    width: 80%;
   }
   main .container .wrapper .dataContainer {
     -ms-flex-direction: column;
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center;
-    width: 320px;
+    width: 80%;
     margin: 25px auto;
   }
   main .container .wrapper .dataContainer .data {
     width: 90%;
+  }
+  main .container .wrapper canvas {
+    width: 80%;
+    margin-bottom: 25px;
   }
 }
 
@@ -1028,5 +1059,51 @@ main .container .wrapper h3 {
   .links {
     width: 500px;
   }
+}
+
+@media (max-width: 600px) {
+  .links {
+    width: 100%;
+    margin: auto;
+  }
+  .links .link {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+  .links .link p {
+    width: 80%;
+    text-align: center;
+  }
+  .links .link .linkContainer {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .links .link .iContainer {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+/* actives */
+.activeSidebar {
+  width: 200px;
+  height: 100vh;
+}
+
+.activeSidebar .sidebar_header .hand {
+  display: inline-block;
+}
+
+.activeSidebar .sidebar_header i {
+  padding: 0 15px 5px 0;
+}
+
+.activeSidebar .manager {
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=style.css.map */

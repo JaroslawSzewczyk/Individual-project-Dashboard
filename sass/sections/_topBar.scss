@@ -44,18 +44,19 @@
 
 @media (max-width: 600px) {
   .topBar {
-    width: 60px;
-    height: 100vh;
+    width: 40px;
+    height: calc(100vh - 50px);
+    margin-top: 50px;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
+    border-right: 1px solid $first-border-color;
 
-    .column {
+    .columnBtn {
       flex-direction: column;
-      width: 60px;
-      height: 120px;
+      width: 40px;
       border-bottom: 1px solid $first-border-color;
 
-      p {
+      span {
         display: none;
       }
 
@@ -64,12 +65,17 @@
       }
 
       .circle{
-        top: 45px;
+        top: 35px;
       }
     }
 
-    .col_2 {
+    .colShort{
+      height: 100px;
+    }
+
+    .colWide {
       flex-direction: column-reverse;
+      height: 160px;
     }
   }
 }

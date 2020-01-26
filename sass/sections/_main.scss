@@ -116,31 +116,48 @@ main {
 }
 
 @media (max-width: 600px){
-  main .container {
-    width: calc(100vw - 85px);
+  main{
+    top: 5px;
 
-    .dateContainer {
-      flex-direction: column;
-      width: 320px;
+    .container {
+      width: calc(100vw - 75px);
+      margin-top: 0;
 
-      .smallDateContainer{
-        margin: 10px 0 10px;
-      }
-    }
-
-    .wrapper{
-      width: 320px;
-
-      .dataContainer {
+      .dateContainer {
         flex-direction: column;
-        align-items: center;
-        width: 320px;
-        margin: 25px auto;
+        width: 80%;
 
-        .data {
-          width: 90%;
+        .smallDateContainer{
+          margin: 10px 0 10px;
+          flex-direction: column;
+          height: 100px;
+          width: 80%;
+
+          .verticalLine {
+            display: none;
+          }
         }
-     }
+      }
+
+      .wrapper{
+        width: 80%;
+
+        .dataContainer {
+          flex-direction: column;
+          align-items: center;
+          width: 80%;
+          margin: 25px auto;
+
+          .data {
+            width: 90%;
+          }
+        }
+
+        canvas {
+          width: 80%;
+          margin-bottom: 25px;
+        }
+      }
     }
   }
 }
