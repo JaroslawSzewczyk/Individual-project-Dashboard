@@ -1,2 +1,1 @@
-# Individual-project-Dashboard
-First individual project from Kodilla course
+https://jaroslawszewczyk.github.io/Individual-project-Dashboard/
