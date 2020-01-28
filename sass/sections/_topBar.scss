@@ -61,11 +61,7 @@
       }
 
       .icon-arrow-down {
-        transform: rotate(-90deg);
-      }
-
-      .circle{
-        top: 35px;
+        display: none;
       }
     }
 
@@ -75,7 +71,7 @@
 
     .colWide {
       flex-direction: column-reverse;
-      height: 160px;
+      height: 100px;
     }
   }
 }
