@@ -950,6 +950,10 @@ main .container .wrapper h3 {
     height: 100px;
     width: 80%;
   }
+  main .container .dateContainer .smallDateContainer input {
+    width: 50%;
+    border: 1px solid #e3e3e3;
+  }
   main .container .dateContainer .smallDateContainer .verticalLine {
     display: none;
   }

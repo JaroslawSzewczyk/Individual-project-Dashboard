@@ -123,6 +123,11 @@ main {
           height: 100px;
           width: 80%;
 
+          input {
+            width: 50%;
+            border: 1px solid $first-border-color;
+          }
+
           .verticalLine {
             display: none;
           }
